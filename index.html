@@ -1,184 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./style.css">
-    <srcipt src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></srcipt>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mon Premier site web">
+  <meta name="keywords" content="Web,digital,marketing,">
+  <title>Document</title>
+  <!--POUR ICON-->
+  <link rel="shortcut icon" href="./Image/LOGO.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--POLICE GOOGLE-->
+  <!--roboto-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--HAalloween-->
+  <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+  <!--castoro-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap" rel="stylesheet">
+
+
+
+
+
+  <link rel="stylesheet" href="./style.css">
+  <!--BOOTSRAP-->
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+  <srcipt src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></srcipt>
+  <link rel="stylesheet" href="css/style.css">
+  <!--LIEN AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
+      <a href="#">
+        <img src="./Image/LOGO.png" width="50" alt="">
+      </a>
       <a class="navbar-brand" href="#">Diane Khristelle</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item fw-bold">
-            <a class="nav-link" aria-current="page" href="#">Acceuil</a>
+            <a class="nav-link" href="#">A propos de moi</a>
           </li>
           <li class="nav-item fw-bold">
-            <a class="nav-link" href="#">A Propos</a>
+            <a class="nav-link" href="#about">A propos de moi</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mes Services
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold" aria-disabled="true">Contactez-nous</a>
+          <li class="nav-item fw-bold">
+            <a class="nav-link active" href="#services">Mes services</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <a href="contact.html" class="btn btn-outline-warning">Contactez-moi</a>
       </div>
     </div>
   </nav>
+  <!--SECTION HERO-->
   <section class="hero mb-5">
     <div class="container d-flex align-items-center justify-content-center text-center w-100 h-100">
-      <div>
-        <h1 class="text-white fw-bold">Mon Portfolio</h1>
-        <h2 class="text-warning">Here We Go</h2>
-        <a href="#apropos" class="btn btn-warning">En Savoir plus</a>
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-white">Bienvenue chez DCDS</h1>
+          <p class="jost text-white">Nous sommes une agence spécialisée dans la création de site web sur mesure
+            et la mise e place de stratégies marketing digitales efficaces. Notre équipe de passionnés vous accompagne
+            à chaque étapede votre projet,de la conception à la mise en ligne, en passant par le referencement.
+            Notre objectif? vous aider à developper votre visibilité et atteindre vos objectifs commerciaux.</p>
+          <br>
+          <p class="text-primary"><i><b>Here we go web!</b></i></p>
+        </div>
+        <div class="col-md-6">
+          <img src="./Image/HERO2.avif" class="img-fluid rounded-4">
+        </div>
+
       </div>
     </div>
   </section>
-<!--section A Propos-->
-<section id="apropos">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-8">
-        <h3 class="marron">A Propos De Moi</h3>
-        <p>Kore Maunah Diane Khristelle, jeune file dynamique Ivoirienne de souche
-          pure passionnée du domaine de la tech. titulaire d'un bac+4 marketing et management.</p>
-        <a href="#contact" class="btn btn-outline-warning">Contactez-moi ici</a>
-      </div>
-      <div class="col-md-4">
-        <img src="./Image/artworks-qD8wScNsMPdV-0-t500x500.jpg" class="img-fluid rounded-4" alt="rien">
-      </div>
-    </div>
-  </div>
-</section>
 
-<!--NOS SERVICES-->
-<section id="services">
-  <div class="container">
-    <h3 class="fw-bold text-center mb-4">Mes Services</h3>
-    <div class="row">
-      
-      <div class="col-md-3 mb-3">
-        <div class="card" style="width: 18rem;">
-          <img src="./Image/Front_end.jpg" class="card-img-top" alt="BACKEND">
-          <div class="card-body">
-            <h5 class="Dev Front-end">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Contactez-moi ici</a>
-          </div>
+  <!--section A Propos-->
+  <section class=" d-flex justify-content-center align-items-center mb-5" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h3 class="jost text-warning">A propos</h3>
+          <p class="jost2">Kore Maunah Diane Khristelle, jeune fille dynamique Ivoirienne passionnée du domaine de
+            la tech. Titulaire d'un bac+4 en marketing et management.</p>
+          <p class="jost2">
+            Je suis particulièrement intéressé par l'innovation et la créativité dans les campagnes marketing, ainsi
+            que
+            par l'importance d'une gestion efficace des équipes pour atteindre des objectifs communs. Mon expérience
+            lors de stages m'a permis de mettre en pratique mes connaissances théoriques et de développer des
+            compétences en communication, en gestion de projet et en analyse de données.
+
+            Je suis enthousiaste à l'idée de contribuer à des projets stimulants et de collaborer avec des équipes
+            dynamiques pour créer des solutions marketing percutantes. Mon objectif est de continuer à apprendre et
+            à
+            évoluer dans ce domaine en constante évolution, tout en apportant une valeur ajoutée à l'entreprise qui
+            m'accueillera. C'est Dans cette optique que Diane Christelle Digital Solutions qui a pour acronyme DSDC a
+            été créer.
+          </p>
+          <a href="contact.html" class="btn btn-outline-warning">Contactez-moi ici</a>
         </div>
-      </div>
-
-
-      <div class="col-md-3 mb-3">
-        <div class="card" style="width: 18rem;">
-          <img src="./Image/Backend.jpg " class="card-img-top" alt="BACKEND">
-          <div class="card-body">
-            <h5 class="Dev-Backend">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Contactez-moi ici</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card" style="width: 18rem;">
-          <img src=" " class="card-img-top" alt="DEVAPPMOBILE">
-          <div class="card-body">
-            <h5 class="Developpement d'application mobile">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Contactez-moi ici</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-md-3 mb-3">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Contactez-moi ici</a>
-          </div>
+        <div class="col-md-4">
+          <img src="./Image/aprps.jpg" class="img-fluid rounded-4" alt="background" width="500" height="500">
         </div>
       </div>
     </div>
- </div>
-</section>
-<!--CONTACT-->
-<section id="contact" class="bg-secondary">
-  <div class="container py-4">
-    <div class="row">
-      <div class="col-md-6">
-        <iframe src="https://www.google.com/maps/place/Blue+Lions/@5.3478541,-4.0042048,15z/data=!4m2!3m1!1s0x0:0xd7d68a899b48f3e1?sa=X&ved=1t:2428&ictx=111" class="img-fluid" style="border:0;"></iframe>
+  </section>
+
+  <!-- SERVICES,WEB DEVOLPMENT-->
+  <section class="py-4" id="services">
+    <div class="container-fluid">
+      <h3 class="fw-bold text-center mb-4 text-primary bg-body-tertiary rounded-4 py-4">Nos Services</h3>
+      <p class="text-center"><b>Decouvrez comment nos differents savoir faire qui feront de votre de votre entreprise
+          une
+          reference dans son domaine.</b></p>
+      <div class="row py-4">
+        <h3 class="service text-center text-primary mb-4">Front-end dev</h3>
+        <!--PREMIERE CARTE-->
+        <div class="col-md-6 mb-2" data-aos="fade-up-right">
+          <div class="card">
+            <img src="./Image/MARKETING 2.jpg" class="card-img-top object-fit-cover" width="100%" height="250"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card title p-2">Responsive Design</h5>
+              <p class="card-text">Compétence dans la création de sites web adaptatifs qui offrent une expérience
+                utilisateur optimale sur tous les appareils, qu'il s'agisse de smartphones, de tablettes ou
+                d'ordinateurs de bureau. J'utilise des techniques telles que les media queries et le flexbox pour
+                garantir une mise en page fluide.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--DEUXIEME CARTE-->
+        <div class="col-md-6 mb-2" data-aos="fade-down-left">
+          <div class="card">
+            <img src="./Image/MARKETING3.jpg" class="card-img-top object-fit-cover" width="100%" height="250" alt="...">
+            <div class="card-body">
+              <h5 class="card title p-2">Maîtrise des Technologies Web</h5>
+              <p class="card-text">Je possède une solide expertise dans les langages de programmation essentiels au
+                développement front-end, notamment HTML, CSS et JavaScript. Je suis capable de créer des interfaces
+                utilisateur attrayantes et fonctionnelles qui répondent aux besoins des utilisateurs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--TROISIEME CARTE-->
+        <div class="col-md-6 mb-2" data-aos="fade-up-right">
+          <div class="card">
+            <img src="./Image/marketing-strategy-connting-digital-devices-concept_53876-23053.jpg"
+              class="card-img-top object-fit-cover" width="100%" height="250" alt="...">
+            <div class="card-body">
+              <h5 class="card title p-2">Outils de Développement</h5>
+              <p class="card-text">Je suis à l'aise avec divers outils de développement et de gestion de versions, tels
+                que Git, npm et Webpack. Ces outils me permettent de gérer efficacement le code et d'automatiser les
+                tâches répétitives, améliorant ainsi la productivité pour encore boostez le rendu de du travail.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--QUATRIEME CARTE-->
+        <div class="col-6 mb-2" data-aos="fade-down-left">
+          <div class="card">
+            <img src="./Image/business-woman-working-office_1098-17564.jpg" class="card-img-top object-fit-cover"
+              width="100%" height="250" alt="...">
+            <div class="card-body">
+              <h5 class="card title p-2">Accessibilité et Standards Web</h5>
+              <p class="card-text">Je m'engage à respecter les normes d'accessibilité (WCAG) pour garantir que mes
+                créations soient utilisables par tous, y compris les personnes en situation de handicap. Je veille
+                également à suivre les meilleures pratiques en matière de développement web pour assurer la
+                compatibilité entre les navigateurs.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-      <div class="col-md-6">
-        <!--FORMULAIRE DE CONTACT-->
-        <h3 class="text-white mb-4">Envoyez votre message</h3>
+    </div>
+  </section>
+  <section>
+    <br>
+    <br>
+    <!--UI UX DESIGN-->
+    <section class="py-4">
+      <div class="container-fluid">
+        <div class="row py-4">
+          <h3 class="service text-center text-primary mb-4">UI/UX Design</h3>
+          <!--PREMIERE CARTE-->
+          <div class="col-md-6 mb-2" data-aos="fade-up">
+            <div class="card">
+              <img src="./Image/UIUX 2.jpg" class="card-img-top object-fit-cover" width="100%" height="250" alt="...">
+              <div class="card-body">
+                <h5 class="card title p-2">Responsive Design</h5>
+                <p class="card-text">Compétence dans la création de sites web adaptatifs qui offrent une expérience
+                  utilisateur optimale sur tous les appareils, qu'il s'agisse de smartphones, de tablettes ou
+                  d'ordinateurs de bureau. J'utilise des techniques telles que les media queries et le flexbox pour
+                  garantir une mise en page fluide.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--DEUXIEME CARTE-->
+          <div class="col-md-6 mb-2" data-aos="fade-up-right">
+            <div class="card">
+              <img src="./Image/UIUX 3.jpg" class="card-img-top object-fit-cover" width="100%" height="250" alt="...">
+              <div class="card-body">
+                <h5 class="card title p-2">Maîtrise des Technologies Web</h5>
+                <p class="card-text">Je possède une solide expertise dans les langages de programmation essentiels au
+                  développement front-end, notamment HTML, CSS et JavaScript. Je suis capable de créer des interfaces
+                  utilisateur attrayantes et fonctionnelles qui répondent aux besoins des utilisateurs.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--TROISIEME CARTE-->
+          <div class="col-md-6 mb-2" data-aos="fade-up-left">
+            <div class="card">
+              <img src="./Image/UIUX 1.webp" class="card-img-top object-fit-cover" width="100%" height="250" alt="...">
+              <div class="card-body">
+                <h5 class="card title p-2">Outils de Développement</h5>
+                <p class="card-text">Je suis à l'aise avec divers outils de développement et de gestion de versions,
+                  tels
+                  que Git, npm et Webpack. Ces outils me permettent de gérer efficacement le code et d'automatiser les
+                  tâches répétitives, améliorant ainsi la productivité pour encore boostez le rendu de du travail.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--QUATRIEME CARTE-->
+          <div class="col-6 mb-2" data-aos="fade-down">
+            <div class="card">
+              <img src="./Image/UIUX 4.jpg" class="card-img-top object-fit-cover" width="100%" height="250" alt="...">
+              <div class="card-body">
+                <h5 class="card title p-2">Accessibilité et Standards Web</h5>
+                <p class="card-text">Je m'engage à respecter les normes d'accessibilité (WCAG) pour garantir que mes
+                  créations soient utilisables par tous, y compris les personnes en situation de handicap. Je veille
+                  également à suivre les meilleures pratiques en matière de développement web pour assurer la
+                  compatibilité entre les navigateurs.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <!--MARKETING & MANAGEMENT-->
+    <h3 class="service text-center text-primary py-4">Marketing et management</h3>
+    <div class="container-fluid">
+      <div class="container text-center">
         <div class="row">
-            <form action="#a" class="row">
-              <div class="col-md-6">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="input">
-                  <label for="floatingInput">Votre nom</label>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-floating mb-3">
-                  <input type="tel" class="form-control" id="floatingInput" placeholder="input">
-                  <label for="floatingInput">Votre Télephone</label>
-                </div>
-              </div>
-              <div class="col-md-12">
-               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="input">
-                <label for="floatingInput">Votre Mail</label>
-              </div>
-              <div class="col-md-12">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="input">
-                  <label for="floatingInput">Message</label>
-                </div>
-              <div class="col-md-12"  >
-                <button class="btn btn-primary">Envoyez!</button>
-              </div>
-            </form>
-        </div>
-        
+          <div class="col-md-3 text-center">
+            <div class="marketing p-3 fw-bold">Gestion de projet</div>
+            <p class="marketing">Aptitude à planifier, exécuter et superviser des projets marketing de A à Z.
+              Utilisation de
+              méthodologies agiles pour assurer le respect des délais et des budgets tout en atteignant les
+              objectifs fixés.
+            </p>
+          </div>
 
+
+          <div class="col-md-3 text-center">
+            <div class="marketing p-3 fw-bold">Leadership et Gestion d'Équipe</div>
+            <p class="marketing">Capacité à diriger et motiver une équipe pour atteindre des objectifs communs.
+              Compétences en gestion
+              des ressources humaines, y compris le recrutement, la formation et le développement des talents.</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="marketing p-3 fw-bold">Stratégies de Marketing Digital</div>
+            <p class="marketing">Compétences dans la création et la mise en œuvre de campagnes de marketing digital, y
+              compris le SEO,
+              le SEM, et les réseaux sociaux. Maîtrise des outils d'analyse pour évaluer l'efficacité des campagnes
+              et ajuster les stratégies en conséquence.
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="marketing p-3 fw-bold"> Communication et Relations Publiques</div>
+            <p class="marketing">Bonnes compétences en communication écrite et orale, avec une capacité à établir des
+              relations
+              solides avec les clients, les partenaires et les parties prenantes. Expérience dans la rédaction de
+              contenus engageants et la gestion de la réputation de la marque</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--POURQUOI NOUS 1-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Pourquoi-nous</h1>
+          <p> <i>Nous vous offrons des solutions digitales innovantes et efficaces pour booster votre croissance.Notre
+              approche personalisée, notre
+              passion pour le digital et notre engagement à vous fournir des résultats concrets.
+              Nous allions créativité et data pour developper des strategies digitales sur-mesure. ous vous accompagons
+              à chaque étape de la définition de vos objectifs
+              à la mésure de vos résultats.
+              Nous mettons aussi en avant le UX/UI design, ainsi que le SEO, SEA.</i></p>
+          <p></p>
+        </div>
+        <div class="col py-4" data-aos="zoom-in-right">
+          <img src="./Image/POURQUOI NOUS.jpg" class="img-fluid rounded-4" alt="POURQUOINOUS">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--POURQUOI NOUS 2-->
+  <section>
+    <div class="container py-4">
+      <div class="row">
+        <div class="col">
+          <p class="py-2"><i>Nous nous adressons au PME, les startups,ansi que les organisations et les grands
+              groupes.<br>
+              <b>Transparence totale:</b> Rapports détaillés et des objectifs clairs.<br>
+              <br>
+              <b>Communication Réguliere:</b> Nous vous tenons imformé à chaque étape du projet.<br>
+              <br>
+              <b>Satisfaction garantie:</b> Votre succès est notre priorité.<br>
+            </i>
+          </p>
+
+          <p><i>Nous sommes votre partenaire de confiance. Nous mettons à votre disposition des moyens de contact
+              simples pour permettre
+              à vos clients de vous joindre facilement et rapidement.
+              Un site web vous donnera de la crédibilité aux yeux du monde et permettra de fideliser votre clientèle
+              et de la cibler par ailleurs.</i></p>
+        </div>
+        <div class="col py-4" data-aos="zoom-in-right">
+          <img src="./Image/POURQUOI OUS 2.jpg" class="img-fluid rounded-4" alt="POURQUOINOUS">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <section class="mb-2">
+    <div class="container">
+      <div class="card bg-white footerstyle rounded-4 border-0 shadow d-flex justify-content-center align-items-center">
+        <div class="card-body text-center text-white">
+          <h2 class="fw-bold">Merci de votre visite !</h2>
+          <a href="contact.html" class="btn btn-warning fw-bold">Prêt à donnez un coup de boost à votre entreprise?</a>
+          <h3 class="fw-bold py-4">Suivez moi sur</h3>
+          <div class="sociaux d-flex align-items-center">
+            <a href="https://www.facebook.com/khristeloo.kore" class="mx text-white" target="_blank"
+              rel="no-referrer"><i class="fab fa-facebook f-2xl"></i></a>
+
+            <a href="https://www.instagram.com/_kmdkl.r/" class="mx text-white" target="_blank" rel="no-referrer"><i
+                class="fab fa-instagram f-2xl"></i></a>
+          </div>
+        </div>
       </div>
 
-  </div>
 
+    </div>
 
-
-
-
-
-</section>
+  </section>
 
 
 
@@ -186,7 +375,13 @@
 
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  </body>
-
-  
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 100,
+    });
+  </script>
+</body>
